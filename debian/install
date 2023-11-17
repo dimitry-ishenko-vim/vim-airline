@@ -1,0 +1,3 @@
+autoload doc plugin usr/share/vim-airline
+debian/airline.vim etc/skel/.vim/plugin
+debian/airline.vim etc/skel/.config/nvim/plugin

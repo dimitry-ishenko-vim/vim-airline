@@ -1,0 +1,24 @@
+Source: vim-airline
+Section: editors
+Priority: optional
+Maintainer: Dimitry Ishenko <dimitry.ishenko@gmail.com>
+Build-Depends:
+ debhelper-compat (= 12),
+ dh-vim-addon
+Standards-Version: 4.6.0
+Homepage: https://github.com/vim-airline/vim-airline
+Vcs-Browser: https://github.com/dimitry-ishenko-vim/vim-airline
+Vcs-Git: https://github.com/dimitry-ishenko-vim/vim-airline.git
+Rules-Requires-Root: no
+
+Package: vim-airline
+Architecture: all
+Depends: ${misc:Depends}, ${vim-addon:Depends}
+Description: Lean & mean status/tabline for vim that's light as air.
+ Features:
+   * Tiny core written with extensibility in mind (open/closed principle).
+   * Integrates with a variety of plugins.
+   * Looks good with regular fonts and provides configuration points so you can
+     use unicode or powerline symbols.
+   * Optimized for speed - loads in under a millisecond.
+   * Extensive suite of themes for popular color schemes.

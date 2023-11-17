@@ -1,0 +1,11 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: vim-airline
+Source: https://github.com/vim-airline/vim-airline
+
+Files: *
+Copyright: 2013-2023 The vim-airline authors
+License: MIT
+
+Files: debian/*
+Copyright: 2023 Dimitry Ishenko <dimitry.ishenko@gmail.com>
+License: GPL-3.0+

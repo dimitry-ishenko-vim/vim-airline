@@ -1,0 +1,884 @@
+vim-airline (0.11-597-g3b9e149) UNRELEASED; urgency=medium
+
+  [ Christian Brabandt ]
+  * Changelog: fix link to github
+
+  [ kazukazuinaina ]
+  * update nerdtree's statusline
+  * substitute/NERDtree/NERDTree
+  * add .DS_Store in .gitignore
+
+  [ Christian Brabandt ]
+  * plugin: do not trigger redraws for popup windows
+  * plugin: make use of rand() function from vim 8.1.2342
+  * themes: drop simple colorscheme - theme mappings
+  * Revert "themes: drop simple colorscheme - theme mappings"
+
+  [ kazukazuinaina ]
+  * add :Gina branch command support
+  * add gina's some extensions
+  * update vista.vim's url in document
+
+  [ Christian Brabandt ]
+  * whitespace: do not detect '=======' as conflict marker for rst files
+  * netrw: do not error out when g:netrw_sort_by is not defined
+  * tabline: simplify autocommand condition
+  * tabline: skip expansive BufAdd call on Session load
+  * vista: init extension on VimEnter
+  * config: allow to disable setting the statusline option
+  * plugin: save/restore cpo setting
+
+  [ kazukazuinaina ]
+  * add gina support for vim-airline's branch
+  * update changelog
+  * fix typo in tabline.vim
+  * add try catch in gina.vim's extension in branch.vim
+  * can choice to use gina's extension
+  * add screen shot section
+  * fix untrack branch check about gina
+
+  [ midchildan ]
+  * fix missing check for w:airline_disable_statusline
+  * allow disabling airline per-buffer
+
+  [ kazukazuinaina ]
+  * add vaffle extension
+
+  [ Jonathan Feinberg ]
+  * Adding option: `buffers#buffer_idx_mode = 3`
+
+  [ petobens ]
+  * Add poetv extension
+
+  [ kazukazuinaina ]
+  * update .travis.yml
+  * add poetv in CHANGELOG.md
+  * update license's year in vim-airline
+  * update preview in extensions.vim
+  * update license year in doc/airline.txt
+
+  [ Christian Brabandt ]
+  * highlighter: check for accents key
+  * highlighter: fix obvious spelling error
+
+  [ David Lukes ]
+  * Suggest fix for #2045
+
+  [ kazukazuinaina ]
+  * [fix] can display loaded extension in g:airline_extensions
+  * [fix] nerdtree's url
+
+  [ Christian Brabandt ]
+  * branch: disable FocusGained handler when updating fugitive information
+  * async: problem with powershell
+  * async: correctly redirect error on powershell
+  * async: correctly use &shell and &shellcmdflag
+
+  [ David Briscoe ]
+  * branch: ignore upcoming FocusGained when updating
+
+  [ kazukazuinaina ]
+  * [fix] typo in doc
+
+  [ Christian Brabandt ]
+  * completion: only return random theme, when it actually matches
+
+  [ Johannes Wienke ]
+  * Always obey the poetv#enabled setting
+
+  [ kazukazuinaina ]
+  * [update]travis-ci's badge
+  * [add] github actions
+  * [fix] github action's url in README
+  * [update] reviewdog.yml
+  * [update] gina's extensions in extensions dir
+
+  [ Jackson Bailey ]
+  * Specify the full helptags command
+
+  [ David Briscoe ]
+  * Ignore FocusGained events for the current second
+
+  [ kazukazuinaina ]
+  * Changelog / add unit test section
+
+  [ Christian Brabandt ]
+  * term: better formatting of neovim terminal
+
+  [ kazukazuinaina ]
+  * [fix] conut variable's scope
+  * [add] check ale's toggle
+
+  [ François-Xavier Carton ]
+  * Add support for vim-lsp
+
+  [ Serge Y. Stroobandt ]
+  * wordcount: Word count for the combined file types
+
+  [ ckipp01 ]
+  * coc: add in coc_status to coc.nvim integration
+
+  [ Christian Brabandt ]
+  * Changelog: Mention coc.nvim improved integration from #2079
+
+  [ kazukazuinaina ]
+  * [add] gina.vim's url
+  * [fix] github_actions's url
+
+  [ Freed-Wu ]
+  * Add g:airline#extensions#capslock#symbol
+
+  [ kazukazuinaina ]
+  * add plaintex filetype
+  * [add] check vista's toggle
+  * [fix] operator and [add] abort in autoload function
+
+  [ Christian Brabandt ]
+  * coc: use bold accent for g:coc_status
+
+  [ kazukazuinaina ]
+  * fix coc's unit test
+
+  [ Christian Brabandt ]
+  * hunks: integrate coc-git extension
+  * hunks: add abort keyword to function definitions
+
+  [ kazukazuinaina ]
+  * [add] new option / always show tab count feature
+
+  [ Christian Brabandt ]
+  * hunks: remove test for empty branch for changes plugin
+  * [hunks] also cache coc git status
+  * tabline: fix typo
+  * hunks: still some problems with coc-git integration
+
+  [ kazukazuinaina ]
+  * [add] vista's test
+  * [add] some coc's test
+
+  [ troydm ]
+  * zoomwintab extension added
+  * zoomwintab extension vint fix
+
+  [ kazukazuinaina ]
+  * [add] zoomwintab's document
+
+  [ Christian Brabandt ]
+  * wordcount: only test against complete filetypes
+
+  [ kazukazuinaina ]
+  * [add] cursormode's toggle
+  * [add] ycm's toggle and doc
+  * [add] coc-git section in README
+  * [adjust] coc_status's width
+
+  [ Christian Brabandt ]
+  * extensions: prevent error about unknown function for ycm
+  * README: fix saythanks link
+
+  [ kazukazuinaina ]
+  * [add] branch symbol's Explanation
+  * [add] vaffle's path section
+
+  [ Christian Brabandt ]
+  * hunks: only enable coc-git extension, if explicitly enabled by the user
+  * hunks: fix missing line continue character
+
+  [ Shaine Hatch ]
+  * Use disabled style for inactive tabs
+
+  [ Christian Brabandt ]
+  * plugin: load vim-airline as optional package
+  * Fix brocken CI test
+
+  [ jolan78 ]
+  * fix for #2127
+
+  [ kazukazuinaina ]
+  * abopt get() function
+  * [update] CHANGELOG.md
+  * fix missing endif
+  * [refactor] vimagit's extension
+  * [update] CONTRIBUTING.md
+
+  [ PratikBhusal ]
+  * Added vim-dirvish support
+
+  [ Janek ]
+  * Update README.md
+
+  [ kazukazuinaina ]
+  * [add] unite and denite's config
+
+  [ PratikBhusal ]
+  * vim-dirvish: Fixed bugs and added better include guards
+
+  [ Rick Jones ]
+  * Add update highlights docs
+
+  [ kazukazuinaina ]
+  * [update] license's year in airline's extension
+
+  [ Robert Anderson ]
+  * Support fzf and fzf.vim
+
+  [ kazukazuinaina ]
+  * [update] wordcount's formatter's license year
+
+  [ Larry Bradley ]
+  * Fix handling of virtualenv and poetv plugins
+
+  [ kazukazuinaina ]
+  * [add] fzf integration's document
+
+  [ Christian Brabandt ]
+  * terminal: correctly shorten terminal tabline
+
+  [ kazukazuinaina ]
+  * [add] terminal mode's color palette
+  * [add] support fot searchcount extension
+  * delete redrawstatus
+
+  [ wzy ]
+  * Fix bug of keyboard_layout
+
+  [ Franco Victorio ]
+  * Fix link to localsearch repo
+
+  [ nickspoons ]
+  * Add OmniSharp extension to display server status
+
+  [ Christian Brabandt ]
+  * fzf: do not check for loaded fzf
+
+  [ kazukazuinaina ]
+  * [add] searchcount's document
+
+  [ Rick Jones ]
+  * Dynamically resize section Z
+  * Make appending airline_right_alt_sep conditional on it not being empty (wordcount)
+
+  [ skeept ]
+  * don't rely on NR for checking that NrrRgn is loaded
+
+  [ Christian Brabandt ]
+  * hunks: do not add trailing whitespace when branch extension is disabled
+
+  [ konafx ]
+  * Add extension for fern.vim
+
+  [ Carlo Delle Donne ]
+  * Add support for cdelledonne/vim-cmake
+
+  [ Daniel Cousens ]
+  * Fix spelling typo in comment
+
+  [ kazukazuinaina ]
+  * [fix] searchcount's extension
+  * [fix] CI's error
+  * [add] short_path formatter in section_c
+  * fix CI
+  * [fixup] Release the search restriction and remove unnecessary functions
+
+  [ tooSadman ]
+  * Added support for built-in nvim-lsp
+
+  [ kazukazuinaina ]
+  * [add] short_path's doc in airline
+  * [add] new vim version's test
+  * [add] wordcount's reading time formatter
+
+  [ Christian Brabandt ]
+  * Disable whitespace checking for csv files
+
+  [ kazukazuinaina ]
+  * [add] readingtime formatter's document
+  * [fix] readingtime formatter's doc
+  * [adjust] vista's extension  width
+
+  [ eevan78 ]
+  * Small improvements of po extension
+  * Make keymap extension follow the iminsert option
+  * Initial Windows support for msgfmt
+  * Fix po.vim
+
+  [ Krishna Biradar ]
+  * Update README.md
+
+  [ Christian Brabandt ]
+  * searchcount: Ignore errors from searchcount() function
+
+  [ huanhuan_zhuang ]
+  * add 'g:airline#extensions#tabline#tabtitle_formatter' option
+
+  [ Christian Brabandt ]
+  * mode: keep hi setting when switching from 'n' to 'ni'
+  * doc: fix typo for show_buffers variable
+
+  [ kazukazuinaina ]
+  * [fix] document's typo about nerdtree_statusline
+
+  [ Paul Walker ]
+  * vim-magit: Can't use an empty dictionary key
+
+  [ kazukazuinaina ]
+  * [add] support battery.vim
+  * [update] .gitignore
+
+  [ Christian Brabandt ]
+  * fix failing test
+
+  [ Nathan Lanza ]
+  * Only attempt to use dirvish if b:dirvish exists
+
+  [ Andy ]
+  * Support coc-explorer (file explorer extension)
+
+  [ Christian Brabandt ]
+  * doc: mention coc explorer
+
+  [ Moschcau, Kai ]
+  * Improve the term extension and make it consistent
+
+  [ Subhaditya Nath ]
+  * Add more customization for 'localsearch' extension
+
+  [ Christian Brabandt ]
+  * doc: fix grammatical typo
+
+  [ MuhammadMouradG ]
+  * Fix buffer order in tabline with CtrlSpace plugin
+
+  [ kazukazuinaina ]
+  * [fix] Variable Scope in ctrlspace's extension
+
+  [ adrian5 ]
+  * Fix wording/typos in doc
+
+  [ Whisperity ]
+  * [battery.vim] Move indicator to non-overwriting position if window big enough
+
+  [ kazukazuinaina ]
+  * [fix] localsearch's url and add abort in autoload function
+
+  [ James Rowe ]
+  * Fix doc for enabling wordcount’s reading time support
+
+  [ Wang Ruochen ]
+  * Add nroff to wordcount
+
+  [ Subhaditya Nath ]
+  * Improve the documentation of localsearch extension
+
+  [ Kamil Cukrowski ]
+  * Add gen_tags.vim plugin support
+
+  [ Christian Brabandt ]
+  * Get rid of g:airline_gui_mode
+
+  [ Nick Friday ]
+  * [add#keymap] more customization
+
+  [ Christian Brabandt ]
+  * extensions: fix E715
+
+  [ kazukazuinaina ]
+  * [fix] bookmark extension's indentation and add abort
+  * [fix] short path formatter's space
+
+  [ Martin Asquino ]
+  * Check LanguageClient-neovim's status before getting diagnostics
+
+  [ Kamil Cukrowski ]
+  * Fix bug in checking if gen_tags plugin is loaded
+
+  [ Jan Steinke ]
+  * remove work-around for vista.vim
+  * remove unnecessary indirection
+
+  [ timfeirg ]
+  * fix deprecation warning
+
+  [ Christian ]
+  * doc: mention that the tabline mappings are not automatically created
+  * doc: document tabline highlighting groups (closes #2285)
+
+  [ srinivas32 ]
+  * added power support arch ppc64le on yml file.
+
+  [ nbCloud91 ]
+  * coc_status should show with autochdir
+
+  [ Christian Brabandt ]
+  * tabline: get rid of s:vars in default formatter
+  * tabline: use strpart() with chars if possible (fixes #2297)
+  * tabline: use airline#util#strcharpart instead on relying on stpart() with char index
+
+  [ Christian ]
+  * highlighter: windows terminal is not old win_term
+
+  [ Christian Brabandt ]
+  * highlighter: windows terminal uses $WT_SESSION
+  * whitespace: skip trailing ws test for mail filetypes
+
+  [ kazukazuinaina ]
+  * [add] github-actions Note: According to an email from travis-ci, travis-ci.org will be officially closed down completely on December 31st, 2020
+  * delete travis.yml
+  * [update] CI's badge and [update] CHANGELOG.md
+
+  [ Christian Brabandt ]
+  * plugin: remember 'scroll' option value and reset it after enabling the statusline
+
+  [ roachsinai ]
+  * tabline: add command for skip to tenth tab/buffer.
+
+  [ Bailey Ling ]
+  * Update maintainers list
+  * Happy new year!
+
+  [ micchy326 ]
+  * impl vim-lsp progress
+  * fix vint
+  * fix test
+  * describe to disabling procedure
+
+  [ Christian Brabandt ]
+  * init: section_y includes missing endofline and BOM
+  * searchcount: Add leading space
+  * doc: mention that searchcount is only enabled when 'hls' is on
+
+  [ Kid ]
+  * Update vim-lawrencium link
+
+  [ Jero Sutlovic ]
+  * Modified dark.vim commandline gui colors
+
+  [ Emilien Jégou ]
+  * Support Vue.js file extension in jsformatter
+
+  [ David Briscoe ]
+  * Return nothing when there is no lsp-progress
+
+  [ Christian Brabandt ]
+  * nvimlsp: do not check for :LspInstallInfo
+  * nvimlsp: correctly call the lua functions for nvimlsp
+
+  [ Jan-Willem van der Sijp ]
+  * Ensure correct checking of LSP support on neovim
+
+  [ Kris Warner ]
+  * Add searchmethod setting for tagbar extension
+
+  [ David Briscoe ]
+  * Write msgfmt output to /NUL
+
+  [ kazukazuinaina ]
+  * [Refactor] Functionalization of branch extension
+
+  [ Utkarsh Verma ]
+  * coc: Show line number for warnings and errors.
+
+  [ Youngjae Lee ]
+  * tagbar: add missing default search method
+
+  [ Craig ]
+  * Fix effecting for affecting.
+
+  [ Christian Brabandt ]
+  * highlighter: handle color names when converting into msdos codes
+
+  [ patrick96 ]
+  * coc: Show the current function in section_x
+
+  [ Rick Jones ]
+  * Move AirlineAfterTheme to load_theme()
+
+  [ Kirill Kuznetsov ]
+  * Fix error: key not present in dictionary "percentage"
+
+  [ yasuda ]
+  * Set bufname for [Scratch] (buftype = nofile) or [No Name] (otherwise)
+
+  [ Christian Brabandt ]
+  * highlighter: do not error out, if defined hi-color does not exist
+  * whitespace: Skip '===' conflict marker for markdown
+
+  [ kazukazuinaina ]
+  * [add] test case for init.vim / When autochdir is enabled
+  * [add] g:airline_section_c_only_filename
+  * [add] AirlineExtensions's test case
+  * [add] parts's test
+
+  [ ReubenM ]
+  * Fix symbols and layout used in line and column display from section-z. Added column number symbol.
+  * Remove un-needed spaces in section-z when using Ascii variant
+
+  [ Christian Brabandt ]
+  * autocommands: check for existence of airline highlight group
+
+  [ Trevor Stone ]
+  * Fire AirlineToggledOff autocmd even if airline is disabled
+
+  [ kazukazuinaina ]
+  * tests: add some more tests for g:airline_section vars
+
+  [ Vincenzo Di Massa ]
+  * glob return results without removing wildignore matches
+
+  [ Christian Brabandt ]
+  * symbols: Use a different Column char in UTF-8
+  * autoload: handle bufnr as string explicitly
+  * doc: Allow for experimental features
+  * tabline: only remove 'e' flag from guioptions, if it is present
+  * vim9: Convert tabline.vim to vim9 script
+  * vim9: Rewrite tabline#formatters#default to Vim9Script
+  * vim9: rewrite themes.vim to Vim9 Script
+  * themes: remove tabs for indenting
+  * vim9: finish early for legacy Vims
+  * vim9: Rewrite highlighter in Vim9 Script
+  * vim9: Use correct vim9 lambda functions
+  * scrollbar: add an ascii scrollbar extension
+  * scrollbar: user after variable instead of re-calculating it
+  * tabline: remove commented out functions, that are not possible in Vim9
+
+  [ ReubenM ]
+  * Make everything in linenr, maxlinenr, and colnr completely configureable, including spaces and colons. The only thing hard wired anymore is the actual numbers.
+
+  [ kazukazuinaina ]
+  * [add] winwidth's test
+
+  [ ReubenM ]
+  * Update docs
+
+  [ Christian Brabandt ]
+  * scrollbar: disable by default
+
+  [ Youngjae Lee ]
+  * scrollbar: fix first line overwrite
+
+  [ Aaron Adams ]
+  * Warn if a function is already registered for inactive statusline
+
+  [ Christian Brabandt ]
+  * autoload: fix error with vim74
+
+  [ Andrzej Ostruszka ]
+  * Change event for tabline autoshow
+
+  [ Adrian Trunzo ]
+  * Correct line number for coc.nvim warnings.
+
+  [ Christian Brabandt ]
+  * vim9: Needs at least version 8.2.22844
+
+  [ kazukazuinaina ]
+  * [refactor] use Ternary operator
+  * [add] 8.2.2000 in ci
+  * [fix] issue #2338 add check airline_stl_path_style's flag and pathshortln api
+
+  [ Evan Chen ]
+  * Allow overriding trailing ws regexp per buffer
+
+  [ zeertzjq ]
+  * Don't show "gina" in diff buffers if b:gina_initialized is not set
+
+  [ LOTehan ]
+  * color name is  case-sensitive in the latest gvim
+
+  [ Freed-Wu ]
+  * Fix #2418
+
+  [ wzy ]
+  * Fix bug of g:airline_symbols.spell == ''
+
+  [ Christian Brabandt ]
+  * style: Remove colon
+  * coc-extension: remove dead code
+
+  [ kazukazuinaina ]
+  * [fix] assertion roulette
+  * [fix] extensions_default's assertion rulette
+
+  [ Bea Hughes ]
+  * Add vim-rufo extension support to section z.
+
+  [ Yang Tian ]
+  * remove gitgutter dependecy on branch
+
+  [ Fedor ]
+  * Allow user to hide CoC status in the section C
+  * Add documentation
+
+  [ Dood of Distinction ]
+  * Modifies the wordcount to use the vimtex wordcount function when editing TeX files and the vimtex plugin is loaded.
+
+  [ Indelog ]
+  * Add extention to support yegappan/taglist
+
+  [ Christian Brabandt ]
+  * wordcount: allow to disable vimtex wordcount()
+
+  [ yasuda ]
+  * Custom spell check command support
+
+  [ Christian Brabandt ]
+  * taglist: check that correct function exists
+
+  [ Indelog ]
+  * taglist: correctly check for right taglist plugin (closes: #2463)
+
+  [ Michael Monsivais ]
+  * taglist: load taglist variants only once
+
+  [ Tama McGlinn ]
+  * Add support for flog with git status summary
+
+  [ Indelog ]
+  * Add extention for yegappan/lsp
+
+  [ Christian Brabandt ]
+  * tabline: Give error message, if switching buffers is not possible
+
+  [ Gauravsingh Sisodia ]
+  * main: ignore popup windows for inactive windows (closes: #2387)
+
+  [ Christian Brabandt ]
+  * virtualenv: Enable for additional filetypes beside python
+
+  [ Ilia Choly ]
+  * nvimlsp: use vim.diagnostic.get() if available
+
+  [ kazukazuinaina ]
+  * [fix] Fix meaningless tests.
+
+  [ Jeff Pitman ]
+  * builder: bugs in is_empty_section
+
+  [ Adrian Trunzo ]
+  * Test for the correct fern loaded variable.
+
+  [ James Rowe ]
+  * unicode: Fix check for :UnicodeTable buffer
+  * unicode: Trivial quote change for vint error
+
+  [ Christian Brabandt ]
+  * mode: add several new modes
+  * taglist: avoid v:true/v:false
+
+  [ patricknraanes ]
+  * Enable display country flag instead of spelllang
+
+  [ Brandon Doornbos ]
+  * Fix typo/wording in doc
+
+  [ Christian Brabandt ]
+  * neovim: support global statusline and do not truncate too early
+  * ci: correctly checkout vim-flavor using https://
+
+  [ Jonathan Müller ]
+  * Don't use flags in spell when spelllang disabled
+
+  [ yasuda ]
+  * tabline: Fix tab label being named wrongly
+
+  [ Christian Brabandt ]
+  * fix ci test for tabline
+
+  [ Paul Fernandez ]
+  * Changed bufloaded back to buflisted
+
+  [ zoumi ]
+  * make exclude pattern works when there are more than one tabpages
+
+  [ Christian Brabandt ]
+  * fugitiveline: leading zeros dropped in buffername
+  * scrollbar: allow to customize minimum window width
+
+  [ Sven Berkvens-Matthijsse ]
+  * Mark the end of the close button
+
+  [ Christian Brabandt ]
+  * fugitive: remove old fugitive test
+
+  [ Matteo Riondato ]
+  * Show flag when `detect_spelllang` is `'flag'`, do not when it is 0.
+
+  [ kazukazuinaina ]
+  * [adopt] vim-themis
+  * ci: correctly checkout vim-flavor using https://
+
+  [ Christian Brabandt ]
+  * fugitive: remove old fugitive test
+
+  [ kazukazuinaina ]
+  * [update] CONTRIBUTING.md
+
+  [ IK ]
+  * Update .github/workflows/ci.yml
+  * Update .github/workflows/ci.yml
+
+  [ kazukazuinaina ]
+  * [delete] single quote
+  * [add] Test section in README
+
+  [ Roberto Castagnola ]
+  * vim9: Fix boolean check in tabline#formatters#default
+
+  [ kazukazuinaina ]
+  * [update] CONTRIBUTING.md
+
+  [ Tim Pope ]
+  * branch: simplify git branch logic slightly
+
+  [ Christian Brabandt ]
+  * tabline: properly refresh with ModeChanged autocommand
+  * highlighter: always consider terminal to be non-modified
+
+  [ kazukazuinaina ]
+  * [add] Vim9's test in CI
+
+  [ Christian Brabandt ]
+  * plugin: mention how to disable certain events
+
+  [ WADA Takashi ]
+  * Follow interface change of Tlist_Get_Filenames() in taglist
+
+  [ GONI Guillaume ]
+  * add support for line numbers for nvimlsp like ale
+
+  [ Michael ]
+  * Update old link
+
+  [ Christian Brabandt ]
+  * symbols: use proper Column number codepoint
+  * doc: adjust documentation for colnr symbol
+  * fern: enable fern again
+  * fugitiveline: remove outdated calls to fugitive
+
+  [ BonaBeavis ]
+  * Fix nvimlsp not picking up show_line_number
+
+  [ Christian Brabandt ]
+  * builder: correctly remember the previous group when switching alignment
+  * plugin: handle sandbox mode gracefully
+
+  [ Shawn M Moore ]
+  * Reduce truncation for section y to 80 chars
+
+  [ Shad ]
+  * Update util.vim
+
+  [ kazukazuinaina ]
+  * [add] terminal col/line size in Issue template
+
+  [ amarakon ]
+  * Remove trailing whitespace
+  * Treat R Markdown the same as Markdown
+
+  [ Christian Brabandt ]
+  * doc: fix typo
+
+  [ 0Magenta0 ]
+  * Typo: Add Missing Quotation Mark
+
+  [ eximus ]
+  * Use the coc status variable to format error/warning line number
+
+  [ DEMAREST Maxime ]
+  * Fix vim9lsp ErrorCount method name change
+
+  [ eximus ]
+  * Improve coc error/warning status format to include count
+
+  [ Kamil Zabielski ]
+  * Fix missing hyperlink in docs
+
+  [ Wu Zhenyu ]
+  * Add support for fcitx.vim
+
+  [ Zhizhen He ]
+  * fix typo
+
+  [ Igbanam Ogbuluijah ]
+  * add variardic arguments to get_highlight functions
+  * add variardic arguments to generate_color_map
+
+  [ Thomas Merz ]
+  * 🩹 fix deprecation warning:
+
+  [ Christian Brabandt ]
+  * Powerline: Mention alternative to notexists symbol
+
+  [ Pierre-Nicolas Clauss ]
+  * only set laststatus when airline is not on top
+
+  [ Radar ]
+  * Allow to define own path for short_path formatter
+
+  [ Simon Truscott ]
+  * hunks: add support for gitsigns.nvim
+  * searchcount: add configuration
+  * hunks: use gitsigns_status_dict instead of gitsigns_status
+
+  [ Christian Brabandt ]
+  * formatter: tabnr expects a number bot got List
+  * tabnr: replace by a new naive function
+  * extensions: correctly check for external extensions
+  * extensions: fix tabnr formatter
+
+  [ Artem Minyaylov ]
+  * Use mode minwidth to configure truncation
+  * Add improved short path tabline formatter
+
+  [ Christian Brabandt ]
+  * tabnr formmatter: return tabpagebuflist for tab_nr==0
+  * tabnr_formatter: get correct name for tabpage
+  * tagbar: prevent error on initial load
+  * tagbar: move s:flags to inside the function
+  * tagbar: break too long line
+  * tagbar: do not load, if file size is too large (closes: #2578)
+
+  [ Simon Truscott ]
+  * hunks: prevent selecting GitGutter when its loaded but not enabled
+
+  [ Christian Brabandt ]
+  * wordcount: skip updating wordcount for vimtex#misc#wordcount() in visual mode
+
+  [ get-me-power ]
+  * chore: Pin actions-checkout's version main branch
+
+  [ Christian Brabandt ]
+  * fix saythank.io link
+
+  [ eximus ]
+  * fix tabline tabnr formatter - nr of splits
+
+  [ Christian Brabandt ]
+  * Fix check for vim9 script
+
+  [ Sweidan Omár ]
+  * Update README.md
+
+  [ Christian Brabandt ]
+  * term: allow to customize section_a and section_z (closes: #2647)
+
+  [ David Briscoe ]
+  * Don't lock repo when checking status
+
+  [ Christian Brabandt ]
+  * branch: --no-optional-locks arg needs to be given to git
+
+  [ Billy Chamberlain ]
+  * plugin: Add extension for vimodoro plugin (#2652)
+
+  [ Christian Brabandt ]
+  * vimodoro: fix style according to reviewdog
+
+  [ Ingo Meyer ]
+  * plugin: Add extension for codeium
+
+  [ Christian Brabandt ]
+  * ci: fix failing test
+  * ci: run on ubuntu 20.04 instead of ubuntu 22.04
+
+ -- Dimitry Ishenko <dimitry.ishenko@gmail.com>  Fri, 17 Nov 2023 14:48:13 -0500
