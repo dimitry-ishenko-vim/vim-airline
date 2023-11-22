@@ -1,4 +1,4 @@
-vim-airline (0.11-597-g3b9e149) UNRELEASED; urgency=medium
+vim-airline (0.11-597-g3b9e149-1) unstable; urgency=medium
 
   [ Christian Brabandt ]
   * Changelog: fix link to github
@@ -881,4 +881,8 @@ vim-airline (0.11-597-g3b9e149) UNRELEASED; urgency=medium
   * ci: fix failing test
   * ci: run on ubuntu 20.04 instead of ubuntu 22.04
 
- -- Dimitry Ishenko <dimitry.ishenko@gmail.com>  Fri, 17 Nov 2023 14:48:13 -0500
+  [ Dimitry Ishenko ]
+  * Add gbp integration
+  * Fix source format
+
+ -- Dimitry Ishenko <dimitry.ishenko@gmail.com>  Wed, 22 Nov 2023 18:43:04 -0500
