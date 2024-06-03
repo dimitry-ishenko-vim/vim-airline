@@ -1,3 +1,15 @@
+vim-airline (2024.05.20-16c1638f9-1) unstable; urgency=medium
+
+  * doc: Unify notation of variables (#2659)
+  * doc: Make tabline#show_buffers more prominent in documentation (#2663)
+  * parts: error when unsing non-utf8 encoding
+  * xkblayout: use FcitxCurrentIMwithRime() when available (#2670)
+  * lsp: Correct deprecation warning on nvimlsp plugin (#2675)
+  * nvimlsp: Use vim.lsp.buf_get_clients() for Neovim < 0.11
+  * nvimlsp: Correct deprecation warning on nvimlsp plugin (#2678)
+
+ -- Dimitry Ishenko <dimitry.ishenko@gmail.com>  Sun, 02 Jun 2024 22:35:46 -0400
+
 vim-airline (0.11-597-g3b9e149-1) unstable; urgency=medium
 
   [ Christian Brabandt ]
